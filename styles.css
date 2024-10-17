@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --hero-bg: #1F2937;
+    --img-b-cta-bg-but: #3882F6;
+    --dark-bg: #F9FAF8;
+    --white-bg: #1F2937;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 4em;
+    align-items: flex-end;
+}
+
+li {
+    padding: 0 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    align-content: space-between;
+}
+
+#solo, a {
+    color: var(--dark-bg);
+}
+
+#solo {
+    font-size: 24px;
+}
+
+a {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#hero {
+    background-color: var(--hero-bg);
+}
+
+main {
+    display: block;
+}
+
+main div {
+    padding: 4em 4em;
+}
+
+#hero main {
+    display: flex;
+}
+
+#hero p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+#container-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-img {
+    max-width: 400px;
+    height: auto;
+}
+
+h1 {
+    font-size: 48px;
+    color: var(--dark-bg);
+    font-weight: 900;
+}
+
+#workouts {
+    padding: 2em 10em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    color: var(--white-bg);
+    font-weight: 900;
+}
+
+#info {
+    display: flex;
+    padding-top: 3em;
+    padding-bottom: 5em;
+    gap: 20px;
+}
+
+.info-img>p {
+    font-size: 18px;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid var(--img-b-cta-bg-but);
+    border-radius: 7px;
+}
+
+#quote {
+    background-color: #E5E7EB;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: var(--white-bg);
+    padding: 3em 5em;
+}
+
+#cta {
+    background-color: var(--img-b-cta-bg-but);
+    border-radius: 10px;
+    display: flex;
+    margin: 6em 8em 6em 7em;
+    padding: 3em 4em;
+    color: var(--dark-bg);
+    font-size: 24px;
+}
+
+main input[type="submit"]{
+    border: none;
+}
+
+input[type="submit"] {
+    background-color: var(--img-b-cta-bg-but);
+    border-radius: 5px;
+    border: 3px solid white;
+    margin: 20px;
+    padding: 20px 3em;
+    color: var(--dark-bg);
+}
+
+footer {
+    background-color: var(--hero-bg);
+    text-align: center;
+    padding: 2.5em 0;
+    color: var(--dark-bg);
+}
+
+@media (max-width:600px) {
+    * body {
+        text-align: center;
+    }
+
+    #info, #hero main, #cta {
+        display: block;
+    }
+
+    .info-img {
+        margin: 40px 0;
+    }
+
+    #cta {
+        text-align: center;
+        margin: 5em 3em;
+    }
+
+    input[type="submit"] {
+        margin-top: 2em;
+        padding: 20px 30px;
+    }
+
+}
